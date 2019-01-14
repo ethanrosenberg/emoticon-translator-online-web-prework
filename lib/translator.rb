@@ -8,10 +8,11 @@ def load_library
    emoticonindex = {'meaning'  => {}, 'emoticon' => {} }
 
    emoticons.each do |key, value| 
-    english = value[0]
-    japanese = value[1]
-    emoticon_lib['get_meaning'][japanese] = meaning
-    emoticon_lib['get_emoticon'][english] = japanese
+    japanese_meaning = value[1]
+    english_meaning = value[0]
+    
+    emoticonindex['get_meaning'][japanese] = meaning
+    emoticonindex['get_emoticon'][english] = japanese
   end
   emoticon_lib
   
