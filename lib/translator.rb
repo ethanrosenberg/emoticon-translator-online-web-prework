@@ -23,7 +23,9 @@ def get_japanese_emoticon(emoticon_file, emoticon)
   japanese_emoticon = emoti_library['get_emoticon'][emoticon]
   if japanese_emoticon
     return japanese_emoticon
+    
   else
+    
     return 'Sorry, that emoticon was not found'
   end
   
@@ -32,6 +34,7 @@ end
 def get_english_meaning(emoticon_file, emoticon)
   # code goes here
   emoti_library = load_library(emoticon_file)
+  
   eng_translation = emoti_library['get_meaning'][emoticon]
   if eng_translation
     return eng_translation
