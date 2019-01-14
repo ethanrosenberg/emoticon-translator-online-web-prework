@@ -4,7 +4,7 @@ def load_library(emoticon_file)
   emoticons = YAML.load_file(emoticon_file)
   
    #emoticonindex = {}
-   emoticonindex = {'meaning'  => {}, 'emoticon' => {} }
+   emoticonindex = {'get_meaning'  => {}, 'get_emoticon' => {} }
 
    emoticons.each do |key, value| 
     eng = value[0]
