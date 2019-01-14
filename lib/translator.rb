@@ -3,7 +3,7 @@ require 'yaml'
 def load_library
   # code goes here
   
-  emoticons = YAML.load_file(filepath)
+  emoticons = YAML.load_file("./lib/emoticons.yml")
    #emoticonindex = {}
    emoticonindex = {'meaning'  => {}, 'emoticon' => {} }
 
