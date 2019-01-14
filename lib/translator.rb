@@ -10,8 +10,8 @@ def load_library(emoticon_file)
     eng = value[0]
     jap = value[1]
     
-    emoticonindex['emoticon'][eng] = jap
-    emoticonindex['meaning'][jap] = key
+    emoticonindex['get_emoticon'][eng] = jap
+    emoticonindex['get_meaning'][jap] = key
     
     
   end
